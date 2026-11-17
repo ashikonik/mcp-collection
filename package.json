@@ -1,0 +1,21 @@
+{
+  "name": "mcp-collection",
+  "version": "1.0.0",
+  "description": "Comprehensive, independent collection of Model Context Protocol (MCP) servers for Antigravity (agy), Claude Code, Cursor, and OpenCode",
+  "type": "module",
+  "author": "ashikonik",
+  "license": "MIT",
+  "scripts": {
+    "setup:agy": "bash scripts/setup-agy.sh",
+    "test:health": "bash scripts/test-health.sh"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "antigravity",
+    "agy",
+    "ai-agents",
+    "claude-code",
+    "cursor"
+  ]
+}

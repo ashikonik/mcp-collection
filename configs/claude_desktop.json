@@ -1,0 +1,98 @@
+{
+  "mcpServers": {
+    "skills-library": {
+      "command": "node",
+      "args": [
+        "/home/biloi/Projects/skills-library-mcp-public/mcp/dist/index.js"
+      ]
+    },
+    "toolshed": {
+      "command": "node",
+      "args": [
+        "/home/biloi/Projects/toolshed-mcp/dist/index.js"
+      ]
+    },
+    "orchestrator": {
+      "command": "node",
+      "args": [
+        "/home/biloi/Projects/orchestrator/mcp/dist/index.js"
+      ]
+    },
+    "verifier": {
+      "command": "node",
+      "args": [
+        "/home/biloi/Projects/verifier/mcp/dist/index.js"
+      ]
+    },
+    "content-creation": {
+      "command": "node",
+      "args": [
+        "/home/biloi/Projects/content-creation-mcp/mcp/dist/index.js"
+      ]
+    },
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest"
+      ]
+    },
+    "chrome-devtools": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "chrome-devtools-mcp@latest"
+      ]
+    },
+    "memory": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ]
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    },
+    "squish": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "squish-memory"
+      ]
+    },
+    "token-optimizer": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "token-optimizer-mcp"
+      ]
+    },
+    "omega-memory": {
+      "command": "uvx",
+      "args": [
+        "omega-memory",
+        "serve"
+      ]
+    },
+    "longhand": {
+      "command": "longhand",
+      "args": [
+        "mcp-server"
+      ]
+    },
+    "evalview": {
+      "command": "python3",
+      "args": [
+        "-m",
+        "evalview",
+        "mcp",
+        "serve"
+      ]
+    }
+  }
+}

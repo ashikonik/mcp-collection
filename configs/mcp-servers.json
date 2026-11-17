@@ -1,0 +1,147 @@
+{
+  "$schema": "https://json.schemastore.org/mcp-server-config.json",
+  "mcpServers": {
+    "skills-library": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "/home/biloi/Projects/skills-library-mcp-public/mcp/dist/index.js"
+      ],
+      "category": "Workspace & Development",
+      "description": "Searches a local library of skills and agents and manages their installation into coding harnesses."
+    },
+    "toolshed": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "/home/biloi/Projects/toolshed-mcp/dist/index.js"
+      ],
+      "category": "Workspace & Development",
+      "description": "Standalone registry and proxy for local agent capabilities: skills, agents, commands, and MCP servers across machine corpora."
+    },
+    "orchestrator": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "/home/biloi/Projects/orchestrator/mcp/dist/index.js"
+      ],
+      "category": "Workspace & Development",
+      "description": "MCP server over a git repository and its local task board for autonomous agent mission planning."
+    },
+    "verifier": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "/home/biloi/Projects/verifier/mcp/dist/index.js"
+      ],
+      "category": "Workspace & Development",
+      "description": "MCP server that runs project checks and test suites, durably recording the results."
+    },
+    "content-creation": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "/home/biloi/Projects/content-creation-mcp/mcp/dist/index.js"
+      ],
+      "category": "Creative & Multimodal",
+      "description": "Harness-agnostic MCP server exposing content-creation skills and agents across video, audio, 3D, design, and text."
+    },
+    "playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest"
+      ],
+      "category": "Browser & Automation",
+      "description": "Browser automation and testing via Playwright for visual inspection, screenshots, and page navigation."
+    },
+    "chrome-devtools": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "chrome-devtools-mcp@latest"
+      ],
+      "category": "Browser & Automation",
+      "description": "Chrome/Brave DevTools protocol integration for console logs, network tracing, and DOM inspections."
+    },
+    "memory": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
+      "category": "Agent & Memory",
+      "description": "Persistent graph-based memory across sessions with entities, relations, and observations."
+    },
+    "sequential-thinking": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "category": "Agent & Memory",
+      "description": "Dynamic step-by-step reasoning tool enabling structured decomposition of complex problems."
+    },
+    "squish": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "squish-memory"
+      ],
+      "category": "Agent & Memory",
+      "description": "Local-first persistent memory runtime for AI agents with 1-20ms SQLite recall."
+    },
+    "token-optimizer": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "token-optimizer-mcp"
+      ],
+      "category": "Agent & Memory",
+      "description": "Token optimization for 95%+ context reduction via content deduplication and compression."
+    },
+    "omega-memory": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "omega-memory",
+        "serve"
+      ],
+      "category": "Agent & Memory",
+      "description": "Persistent agent memory with semantic search, multi-agent coordination, and knowledge graphs."
+    },
+    "longhand": {
+      "type": "stdio",
+      "command": "longhand",
+      "args": [
+        "mcp-server"
+      ],
+      "category": "Agent & Memory",
+      "description": "Lossless session history indexer capturing tool calls, edits, and thinking blocks into local SQLite + ChromaDB."
+    },
+    "evalview": {
+      "type": "stdio",
+      "command": "python3",
+      "args": [
+        "-m",
+        "evalview",
+        "mcp",
+        "serve"
+      ],
+      "category": "Agent & Memory",
+      "description": "AI agent regression testing suite detecting regressions in tool calls and output quality."
+    },
+    "devfleet": {
+      "type": "http",
+      "url": "http://localhost:18801/mcp",
+      "category": "Agent & Memory",
+      "description": "Multi-agent parallel orchestration daemon dispatching parallel agents in isolated worktrees."
+    }
+  }
+}
