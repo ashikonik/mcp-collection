@@ -1,21 +1,33 @@
 {
   "name": "mcp-collection",
-  "version": "1.0.0",
-  "description": "Comprehensive, independent collection of Model Context Protocol (MCP) servers for Antigravity (agy), Claude Code, Cursor, and OpenCode",
+  "version": "1.1.0",
+  "description": "Universal, cross-platform Model Context Protocol (MCP) collection supporting OpenCode, Cline, Claude Code, Cursor, Windsurf, and Antigravity",
   "type": "module",
   "author": "ashikonik",
   "license": "MIT",
   "scripts": {
-    "setup:agy": "bash scripts/setup-agy.sh",
-    "test:health": "bash scripts/test-health.sh"
+    "test:health": "bash scripts/test-health.sh",
+    "setup": "bash scripts/setup.sh",
+    "setup:all": "bash scripts/setup.sh --target all",
+    "setup:opencode": "bash scripts/setup.sh --target opencode",
+    "setup:cline": "bash scripts/setup.sh --target cline",
+    "setup:claude": "bash scripts/setup.sh --target claude",
+    "setup:cursor": "bash scripts/setup.sh --target cursor",
+    "setup:windsurf": "bash scripts/setup.sh --target windsurf",
+    "setup:agy": "bash scripts/setup.sh --target agy",
+    "generate": "python3 scripts/generate-configs.py"
   },
   "keywords": [
     "mcp",
     "model-context-protocol",
+    "opencode",
+    "cline",
+    "claude-code",
+    "claude-desktop",
+    "cursor",
+    "windsurf",
     "antigravity",
     "agy",
-    "ai-agents",
-    "claude-code",
-    "cursor"
+    "ai-agents"
   ]
 }

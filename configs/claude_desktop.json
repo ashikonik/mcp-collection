@@ -4,86 +4,99 @@
       "command": "node",
       "args": [
         "/home/biloi/Projects/skills-library-mcp-public/mcp/dist/index.js"
-      ]
+      ],
+      "description": "Searches and installs 1000+ skills and 100+ agents into coding harnesses."
     },
     "toolshed": {
       "command": "node",
       "args": [
         "/home/biloi/Projects/toolshed-mcp/dist/index.js"
-      ]
+      ],
+      "description": "Standalone registry and proxy for local agent capabilities across machine corpora."
     },
     "orchestrator": {
       "command": "node",
       "args": [
         "/home/biloi/Projects/orchestrator/mcp/dist/index.js"
-      ]
+      ],
+      "description": "MCP server over a git repository and local task board for autonomous agent mission planning."
     },
     "verifier": {
       "command": "node",
       "args": [
         "/home/biloi/Projects/verifier/mcp/dist/index.js"
-      ]
+      ],
+      "description": "MCP server that runs project checks and test suites, durably recording the results."
     },
     "content-creation": {
       "command": "node",
       "args": [
         "/home/biloi/Projects/content-creation-mcp/mcp/dist/index.js"
-      ]
+      ],
+      "description": "Multimodal creative skills engine (video, 3D, audio, design, text)."
     },
     "playwright": {
       "command": "npx",
       "args": [
         "-y",
         "@playwright/mcp@latest"
-      ]
+      ],
+      "description": "Browser automation and testing via Playwright for visual inspection and navigation."
     },
     "chrome-devtools": {
       "command": "npx",
       "args": [
         "-y",
         "chrome-devtools-mcp@latest"
-      ]
+      ],
+      "description": "Chrome/Brave DevTools protocol integration for console logs, network tracing, and DOM inspections."
     },
     "memory": {
       "command": "npx",
       "args": [
         "-y",
         "@modelcontextprotocol/server-memory"
-      ]
+      ],
+      "description": "Persistent graph-based memory across sessions with entities, relations, and observations."
     },
     "sequential-thinking": {
       "command": "npx",
       "args": [
         "-y",
         "@modelcontextprotocol/server-sequential-thinking"
-      ]
+      ],
+      "description": "Dynamic step-by-step reasoning tool enabling structured decomposition of complex problems."
     },
     "squish": {
       "command": "npx",
       "args": [
         "-y",
         "squish-memory"
-      ]
+      ],
+      "description": "Local-first persistent memory runtime for AI agents with 1-20ms SQLite recall."
     },
     "token-optimizer": {
       "command": "npx",
       "args": [
         "-y",
         "token-optimizer-mcp"
-      ]
+      ],
+      "description": "Token optimization for 95%+ context reduction via content deduplication and compression."
     },
     "omega-memory": {
       "command": "uvx",
       "args": [
         "omega-memory",
         "serve"
-      ]
+      ],
+      "description": "Persistent agent memory with semantic search, multi-agent coordination, and knowledge graphs."
     },
     "longhand": {
       "command": "longhand",
       "args": [
         "mcp-server"
-      ]
+      ],
+      "description": "Lossless session history indexer capturing tool calls and thinking blocks."
     },
     "evalview": {
       "command": "python3",
@@ -92,7 +105,12 @@
         "evalview",
         "mcp",
         "serve"
-      ]
+      ],
+      "description": "AI agent regression testing suite detecting regressions in tool calls and output quality."
+    },
+    "devfleet": {
+      "url": "http://localhost:18801/mcp",
+      "description": "Multi-agent parallel orchestration daemon dispatching parallel agents in isolated worktrees."
     }
   }
 }
