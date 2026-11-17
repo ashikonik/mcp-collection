@@ -7,6 +7,7 @@
       "args": [
         "/home/biloi/Projects/skills-library-mcp-public/mcp/dist/index.js"
       ],
+      "repository": "https://github.com/ashikonik/skills-library-mcp",
       "category": "Workspace & Development",
       "description": "Searches a local library of skills and agents and manages their installation into coding harnesses."
     },
@@ -16,6 +17,7 @@
       "args": [
         "/home/biloi/Projects/toolshed-mcp/dist/index.js"
       ],
+      "repository": "https://github.com/ashikonik/toolshed-mcp",
       "category": "Workspace & Development",
       "description": "Standalone registry and proxy for local agent capabilities: skills, agents, commands, and MCP servers across machine corpora."
     },
@@ -25,6 +27,7 @@
       "args": [
         "/home/biloi/Projects/orchestrator/mcp/dist/index.js"
       ],
+      "repository": "https://github.com/ashikonik/orchestrator-mcp",
       "category": "Workspace & Development",
       "description": "MCP server over a git repository and its local task board for autonomous agent mission planning."
     },
@@ -34,6 +37,7 @@
       "args": [
         "/home/biloi/Projects/verifier/mcp/dist/index.js"
       ],
+      "repository": "https://github.com/ashikonik/verifier-mcp",
       "category": "Workspace & Development",
       "description": "MCP server that runs project checks and test suites, durably recording the results."
     },
@@ -43,6 +47,7 @@
       "args": [
         "/home/biloi/Projects/content-creation-mcp/mcp/dist/index.js"
       ],
+      "repository": "https://github.com/ashikonik/content-creation-mcp",
       "category": "Creative & Multimodal",
       "description": "Harness-agnostic MCP server exposing content-creation skills and agents across video, audio, 3D, design, and text."
     },
@@ -53,6 +58,7 @@
         "-y",
         "@playwright/mcp@latest"
       ],
+      "repository": "https://github.com/modelcontextprotocol/servers",
       "category": "Browser & Automation",
       "description": "Browser automation and testing via Playwright for visual inspection, screenshots, and page navigation."
     },
@@ -63,6 +69,7 @@
         "-y",
         "chrome-devtools-mcp@latest"
       ],
+      "repository": "https://github.com/modelcontextprotocol/servers",
       "category": "Browser & Automation",
       "description": "Chrome/Brave DevTools protocol integration for console logs, network tracing, and DOM inspections."
     },
@@ -73,6 +80,7 @@
         "-y",
         "@modelcontextprotocol/server-memory"
       ],
+      "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/memory",
       "category": "Agent & Memory",
       "description": "Persistent graph-based memory across sessions with entities, relations, and observations."
     },
@@ -83,6 +91,7 @@
         "-y",
         "@modelcontextprotocol/server-sequential-thinking"
       ],
+      "repository": "https://github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking",
       "category": "Agent & Memory",
       "description": "Dynamic step-by-step reasoning tool enabling structured decomposition of complex problems."
     },
@@ -93,6 +102,7 @@
         "-y",
         "squish-memory"
       ],
+      "repository": "https://github.com/michielhdoteth/squish",
       "category": "Agent & Memory",
       "description": "Local-first persistent memory runtime for AI agents with 1-20ms SQLite recall."
     },
@@ -103,6 +113,7 @@
         "-y",
         "token-optimizer-mcp"
       ],
+      "repository": "https://github.com/agent-optimizer/token-optimizer-mcp",
       "category": "Agent & Memory",
       "description": "Token optimization for 95%+ context reduction via content deduplication and compression."
     },
@@ -113,6 +124,7 @@
         "omega-memory",
         "serve"
       ],
+      "repository": "https://github.com/omega-memory/omega-memory",
       "category": "Agent & Memory",
       "description": "Persistent agent memory with semantic search, multi-agent coordination, and knowledge graphs."
     },
@@ -122,6 +134,7 @@
       "args": [
         "mcp-server"
       ],
+      "repository": "https://github.com/longhand-ai/longhand",
       "category": "Agent & Memory",
       "description": "Lossless session history indexer capturing tool calls, edits, and thinking blocks into local SQLite + ChromaDB."
     },
@@ -134,12 +147,14 @@
         "mcp",
         "serve"
       ],
+      "repository": "https://github.com/evalview/evalview",
       "category": "Agent & Memory",
       "description": "AI agent regression testing suite detecting regressions in tool calls and output quality."
     },
     "devfleet": {
       "type": "http",
       "url": "http://localhost:18801/mcp",
+      "repository": "https://github.com/LEC-AI/claude-devfleet",
       "category": "Agent & Memory",
       "description": "Multi-agent parallel orchestration daemon dispatching parallel agents in isolated worktrees."
     }

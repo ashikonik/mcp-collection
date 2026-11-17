@@ -7,6 +7,7 @@
   "license": "MIT",
   "scripts": {
     "test:health": "bash scripts/test-health.sh",
+    "clone:local": "bash scripts/clone-local.sh",
     "setup": "bash scripts/setup.sh",
     "setup:all": "bash scripts/setup.sh --target all",
     "setup:opencode": "bash scripts/setup.sh --target opencode",

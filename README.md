@@ -17,38 +17,54 @@ A curated, unified, and **100% universal collection of Model Context Protocol (M
 
 ## 🛠️ The 15 MCP Servers
 
-| # | Name | Category | Transport | Execution / Command | Description |
-|---|:---|:---|:---|:---|:---|
-| 1 | **`skills-library`** | Workspace | `stdio` | `node dist/index.js` | Searches and installs 1,000+ skills and 100+ agents into coding harnesses |
-| 2 | **`toolshed`** | Workspace | `stdio` | `node dist/index.js` | Unified capability registry and proxy across local machine corpora |
-| 3 | **`orchestrator`** | Workspace | `stdio` | `node dist/index.js` | Git task board and autonomous mission orchestrator |
-| 4 | **`verifier`** | Workspace | `stdio` | `node dist/index.js` | Runs project tests and durably records verification proofs |
-| 5 | **`content-creation`** | Workspace | `stdio` | `node dist/index.js` | Multimodal skills engine for video, audio, 3D, design, and text |
-| 6 | **`playwright`** | Browser | `stdio` | `npx -y @playwright/mcp@latest` | Headless/live browser automation, DOM interaction, screenshots |
-| 7 | **`chrome-devtools`** | Browser | `stdio` | `npx -y chrome-devtools-mcp@latest` | Chromium DevTools inspection (DOM, console, network, memory) |
-| 8 | **`memory`** | Memory | `stdio` | `npx -y @modelcontextprotocol/server-memory` | Graph-based persistent memory (entities, relations, observations) |
-| 9 | **`sequential-thinking`** | Reasoning | `stdio` | `npx -y @modelcontextprotocol/server-sequential-thinking` | Dynamic step-by-step thinking for deep problem solving |
-| 10 | **`squish`** | Memory | `stdio` | `npx -y squish-memory` | Ultra-fast local SQLite memory runtime (<20ms latency) |
-| 11 | **`token-optimizer`** | Performance | `stdio` | `npx -y token-optimizer-mcp` | Context deduplication and 95%+ compression |
-| 12 | **`omega-memory`** | Memory | `stdio` | `uvx omega-memory serve` | Vector semantic search + hybrid knowledge graph recall |
-| 13 | **`longhand`** | Memory | `stdio` | `longhand mcp-server` | Lossless session recorder capturing tool calls & reasoning |
-| 14 | **`evalview`** | Testing | `stdio` | `python3 -m evalview mcp serve` | AI agent regression testing and output quality verification |
-| 15 | **`devfleet`** | Multi-Agent | `http` | `http://localhost:18801/mcp` | Dispatches parallel agents across isolated git worktrees |
+### Local Workspace Repositories (Independent Open Source Tools)
+
+| Server | Category | GitHub Repository | Description |
+|:---|:---|:---|:---|
+| **`skills-library`** | Workspace | [ashikonik/skills-library-mcp](https://github.com/ashikonik/skills-library-mcp) | Searches and installs 1,000+ skills & 100+ agents into harnesses |
+| **`toolshed`** | Workspace | [ashikonik/toolshed-mcp](https://github.com/ashikonik/toolshed-mcp) | Unified capability registry and proxy across local machine corpora |
+| **`orchestrator`** | Workspace | [ashikonik/orchestrator-mcp](https://github.com/ashikonik/orchestrator-mcp) | Git task board and autonomous mission orchestrator |
+| **`verifier`** | Workspace | [ashikonik/verifier-mcp](https://github.com/ashikonik/verifier-mcp) | Runs project tests and durably records verification proofs |
+| **`content-creation`** | Workspace | [ashikonik/content-creation-mcp](https://github.com/ashikonik/content-creation-mcp) | Multimodal skills engine for video, audio, 3D, design, and text |
+
+### Universal Standalone MCPs (Zero-Config via NPM / UVX)
+
+| Server | Category | Transport | Execution / Package | Description |
+|:---|:---|:---|:---|:---|
+| **`playwright`** | Browser | `stdio` | `npx -y @playwright/mcp@latest` | Headless/live browser automation & screenshots |
+| **`chrome-devtools`** | Browser | `stdio` | `npx -y chrome-devtools-mcp@latest` | Chromium DevTools inspection (DOM, network, memory) |
+| **`memory`** | Memory | `stdio` | `npx -y @modelcontextprotocol/server-memory` | Graph-based persistent memory (entities & relations) |
+| **`sequential-thinking`** | Reasoning | `stdio` | `npx -y @modelcontextprotocol/server-sequential-thinking` | Structured step-by-step hypothesis & reasoning |
+| **`squish`** | Memory | `stdio` | `npx -y squish-memory` | Ultra-fast local SQLite memory runtime (<20ms latency) |
+| **`token-optimizer`** | Performance | `stdio` | `npx -y token-optimizer-mcp` | Context deduplication and 95%+ compression |
+| **`omega-memory`** | Memory | `stdio` | `uvx omega-memory serve` | Vector semantic search + hybrid knowledge graph recall |
+| **`longhand`** | Memory | `stdio` | `longhand mcp-server` | Lossless session recorder capturing tool calls & diffs |
+| **`evalview`** | Testing | `stdio` | `python3 -m evalview mcp serve` | AI agent regression testing and output verification |
+| **`devfleet`** | Multi-Agent | `http` | `http://localhost:18801/mcp` | Dispatches parallel agents across isolated git worktrees |
 
 ---
 
 ## ⚡ Quick Start
 
-### 1. Universal Health Check
+### 1. Clone Local Workspace Repositories
+To clone the 5 local workspace MCP repositories into your parent projects directory:
+
+```bash
+npm run clone:local
+# or
+bash scripts/clone-local.sh
+```
+
+### 2. Universal Health Check
 Detects your OS, verifies essential runtimes (`node`, `npm`, `npx`, `python3`, `uvx`, `git`), and scans which AI agent harnesses are installed:
 
 ```bash
-bash scripts/test-health.sh
-# or
 npm run test:health
+# or
+bash scripts/test-health.sh
 ```
 
-### 2. Universal Setup Script
+### 3. Universal Setup Script
 Automatically configures all detected agents, or targets specific ones:
 
 ```bash
@@ -85,13 +101,14 @@ mcp-collection/
 │   ├── claude_desktop.json   # Ready for Claude Code / Desktop
 │   ├── cursor_mcp.json       # Ready for Cursor IDE
 │   ├── windsurf_mcp.json     # Ready for Windsurf IDE
-│   └── mcp-servers.json      # Master schema definition
+│   └── mcp-servers.json      # Master schema definition with repo metadata
 ├── docs/
-│   ├── local-servers.md      # Detailed docs for local workspace servers
+│   ├── local-servers.md      # Detailed docs & git links for local workspace servers
 │   ├── memory-agents.md      # Memory, reasoning & evaluation servers
 │   └── browser-tools.md      # Browser automation tools
 └── scripts/
     ├── setup.sh              # Universal multi-agent setup script
+    ├── clone-local.sh        # Clones all 5 local workspace repositories
     ├── setup-agy.sh          # Legacy shortcut for agy setup
     ├── test-health.sh        # Universal health check & agent detector
     └── generate-configs.py   # Dynamic cross-platform config generator

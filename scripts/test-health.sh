@@ -124,7 +124,7 @@ check_local_repo() {
 check_local_repo "skills-library" "skills-library-mcp-public/mcp/dist/index.js" "https://github.com/ashikonik/skills-library-mcp.git"
 check_local_repo "toolshed" "toolshed-mcp/dist/index.js" "https://github.com/ashikonik/toolshed-mcp.git"
 check_local_repo "orchestrator" "orchestrator/mcp/dist/index.js" "https://github.com/ashikonik/orchestrator-mcp.git"
-check_local_repo "verifier" "verifier/mcp/dist/index.js" "https://github.com/ashikonik/verifier.git"
+check_local_repo "verifier" "verifier/mcp/dist/index.js" "https://github.com/ashikonik/verifier-mcp.git"
 check_local_repo "content-creation" "content-creation-mcp/mcp/dist/index.js" "https://github.com/ashikonik/content-creation-mcp.git"
 
 echo -e "\n${BOLD}${GREEN}✔ Health Check Complete!${RESET}"

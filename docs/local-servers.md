@@ -1,13 +1,18 @@
 # Local Workspace MCP Servers
 
-This document details the locally developed and compiled MCP servers included in the collection.
+This document details the locally developed and compiled MCP servers included in the collection, along with their respective remote GitHub repositories.
 
 ---
 
 ## 1. `skills-library`
-- **Location**: `skills-library-mcp-public/mcp`
+- **GitHub Repository**: [ashikonik/skills-library-mcp](https://github.com/ashikonik/skills-library-mcp)
+- **Local Directory**: `skills-library-mcp-public/mcp`
 - **Entrypoint**: `dist/index.js` (Node.js ESM)
 - **Transport**: `stdio`
+- **Clone Command**:
+  ```bash
+  git clone https://github.com/ashikonik/skills-library-mcp.git skills-library-mcp-public
+  ```
 - **Purpose**: Indexes 1,000+ skills and 100+ agent archetypes from local repositories. Allows dynamic searching, document retrieval, and safe installation into target coding harnesses (e.g. Antigravity, Claude Code, Cursor, OpenCode).
 - **Key Tools**:
   - `search_library`: Relevance-ranked queries across skills and agents.
@@ -19,9 +24,14 @@ This document details the locally developed and compiled MCP servers included in
 ---
 
 ## 2. `toolshed`
-- **Location**: `toolshed-mcp`
+- **GitHub Repository**: [ashikonik/toolshed-mcp](https://github.com/ashikonik/toolshed-mcp)
+- **Local Directory**: `toolshed-mcp`
 - **Entrypoint**: `dist/index.js` (Node.js ESM)
 - **Transport**: `stdio`
+- **Clone Command**:
+  ```bash
+  git clone https://github.com/ashikonik/toolshed-mcp.git toolshed-mcp
+  ```
 - **Purpose**: A standalone registry and capability proxy. Unifies skills, agents, commands, and MCP server endpoints discovered across multiple corpora on the system.
 - **Key Tools**:
   - `search_registry`: Query all available tools and entries.
@@ -32,9 +42,14 @@ This document details the locally developed and compiled MCP servers included in
 ---
 
 ## 3. `orchestrator`
-- **Location**: `orchestrator/mcp`
+- **GitHub Repository**: [ashikonik/orchestrator-mcp](https://github.com/ashikonik/orchestrator-mcp)
+- **Local Directory**: `orchestrator/mcp`
 - **Entrypoint**: `dist/index.js` (Node.js ESM)
 - **Transport**: `stdio`
+- **Clone Command**:
+  ```bash
+  git clone https://github.com/ashikonik/orchestrator-mcp.git orchestrator
+  ```
 - **Purpose**: Git repository task board and autonomous multi-turn mission orchestrator. Maintains state boards, branch planning, and task transitions without external services.
 - **Key Tools**:
   - `board_get` / `board_set`: Read and update task status boards.
@@ -44,9 +59,14 @@ This document details the locally developed and compiled MCP servers included in
 ---
 
 ## 4. `verifier`
-- **Location**: `verifier/mcp`
+- **GitHub Repository**: [ashikonik/verifier-mcp](https://github.com/ashikonik/verifier-mcp)
+- **Local Directory**: `verifier/mcp`
 - **Entrypoint**: `dist/index.js` (Node.js ESM)
 - **Transport**: `stdio`
+- **Clone Command**:
+  ```bash
+  git clone https://github.com/ashikonik/verifier-mcp.git verifier
+  ```
 - **Purpose**: Durable verification engine that executes project test suites, linters, and custom assertions, preserving verification evidence across runs.
 - **Key Tools**:
   - `verify_run`: Execute a configured verification suite.
@@ -56,9 +76,14 @@ This document details the locally developed and compiled MCP servers included in
 ---
 
 ## 5. `content-creation`
-- **Location**: `content-creation-mcp/mcp`
+- **GitHub Repository**: [ashikonik/content-creation-mcp](https://github.com/ashikonik/content-creation-mcp)
+- **Local Directory**: `content-creation-mcp/mcp`
 - **Entrypoint**: `dist/index.js` (Node.js ESM)
 - **Transport**: `stdio` (also supports HTTP via `dist/http.js`)
+- **Clone Command**:
+  ```bash
+  git clone https://github.com/ashikonik/content-creation-mcp.git content-creation-mcp
+  ```
 - **Purpose**: Multimodal creation server exposing specialized skills and agents for media domains (video, audio, text, 3D, and design).
 - **Key Tools**:
   - `list_skills` / `get_skill`: Browse and fetch domain skills.
